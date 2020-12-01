@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Task & Reward List</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <h1>Task & Reward</h1>
+    <form>
+      <input
+        type="text"
+        name="inputTask"
+        placeholder="Task"
+        class="inputTask"
+      />
+
+      <input
+        type="text"
+        name="inputAward"
+        placeholder="Reward"
+        class="inputReward"
+      />
+
+      <button type="submit"><i class="fas fa-plus"></i></button>
+      <div class="selectContainer">
+        <select name="filter" class="filter">
+          <option value="All">All</option>
+          <option value="Tasks">Tasks</option>
+          <option value="Rewards">Rewards</option>
+        </select>
+      </div>
+    </form>
+
+    <ul class="list">
+      <li>
+        <span class="itemTask">Clean the house</span
+        ><button class="btnTask" type="button">
+          <i class="fas fa-arrow-right"></i>
+        </button>
+        <span class="itemReward incompleted">Go shopping</span>
+        <button class="btnReward btnDisabled" type="button" disabled>
+          <i class="fas fa-check"></i>
+        </button>
+      </li>
+      <li class="taskDone">
+        <span class="itemTask completed">Study for exam</span
+        ><button class="btnTask btnDisabled" type="button">
+          <i class="fas fa-arrow-right"></i>
+        </button>
+        <span class="itemReward">Meet with friends</span>
+        <button class="btnReward" type="button">
+          <i class="fas fa-check"></i>
+        </button>
+      </li>
+    </ul>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
