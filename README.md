@@ -6,7 +6,7 @@ The Task and Reward List is similar to the To-Do List, but allows you to add rew
 
 <img src="https://github.com/hzndr/task-and-reward-list/blob/main/img/cover-img.png" alt="Cover image" width="700"/>
 
-###Technologies used:
+### Technologies used:
 - HTML
 - CSS
 - JavaScript
