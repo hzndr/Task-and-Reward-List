@@ -21,55 +21,56 @@
   </head>
 
   <body>
-    <h1>Task & Reward</h1>
-    <form>
-      <input
-        type="text"
-        name="inputTask"
-        placeholder="Task"
-        class="inputTask"
-      />
+    <div class="container">
+      <h1>Task & Reward</h1>
+      <form>
+        <input
+          type="text"
+          name="inputTask"
+          placeholder="Task"
+          class="inputTask"
+        />
 
-      <input
-        type="text"
-        name="inputAward"
-        placeholder="Reward"
-        class="inputReward"
-      />
+        <input
+          type="text"
+          name="inputAward"
+          placeholder="Reward"
+          class="inputReward"
+        />
 
-      <button type="submit"><i class="fas fa-plus"></i></button>
-      <div class="selectContainer">
-        <select name="filter" class="filter">
-          <option value="All">All</option>
-          <option value="Tasks">Tasks</option>
-          <option value="Rewards">Rewards</option>
-        </select>
-      </div>
-    </form>
+        <button type="submit"><i class="fas fa-plus"></i></button>
+        <div class="selectContainer">
+          <select name="filter" class="filter">
+            <option value="All">All</option>
+            <option value="Tasks">Tasks</option>
+            <option value="Rewards">Rewards</option>
+          </select>
+        </div>
+      </form>
 
-    <ul class="list">
-      <li>
-        <span class="itemTask">Clean the house</span
-        ><button class="btnTask" type="button">
-          <i class="fas fa-arrow-right"></i>
-        </button>
-        <span class="itemReward incompleted">Go shopping</span>
-        <button class="btnReward btnDisabled" type="button" disabled>
-          <i class="fas fa-check"></i>
-        </button>
-      </li>
-      <li class="taskDone">
-        <span class="itemTask completed">Study for exam</span
-        ><button class="btnTask btnDisabled" type="button">
-          <i class="fas fa-arrow-right"></i>
-        </button>
-        <span class="itemReward">Meet with friends</span>
-        <button class="btnReward" type="button">
-          <i class="fas fa-check"></i>
-        </button>
-      </li>
-    </ul>
-
+      <ul class="list">
+        <li>
+          <span class="itemTask">Clean the house</span
+          ><button class="btnTask" type="button">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+          <span class="itemReward incompleted">Go shopping</span>
+          <button class="btnReward btnDisabled" type="button" disabled>
+            <i class="fas fa-check"></i>
+          </button>
+        </li>
+        <li class="taskDone">
+          <span class="itemTask completed">Study for exam</span
+          ><button class="btnTask btnDisabled" type="button">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+          <span class="itemReward">Meet with friends</span>
+          <button class="btnReward" type="button">
+            <i class="fas fa-check"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
